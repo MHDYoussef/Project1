@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<title>Syrian Furniture</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+  background-color:#d9d9d9;
+}
+
+h1{
+text-align:center;
+color:#0099cc;
+font-weight: bold;
+
+}
+#cn{
+text-align:center;
+}
+#hh{
+ min-height: 200px;
+}
+#hm{
+ min-height: 50px;
+}
+#hk{
+padding-top:100px;
+ min-height: 400px;
+}
+ .wow{
+  background-position: center;
+  background-size: cover;
+  
+  min-height: 75%;
+}
+
+#col-1 {
+  position: relative;
+  width: 40%;
+  float: left;
+  height: 20px;
+   text-align: center;
+  z-index: 1010101010;
+  min-height: 25%;
+}
+
+#col-2 {
+  position: relative;
+  width: 40%;
+  float: right;
+  height: 20px;
+   text-align: center;
+  z-index: 1010101010;
+  min-height: 25%;
+}
+.oo{
+padding-top:300px;
+}
+</style>
+<body>
+<div id="hh"><h1>  شركة الاحلام للمفروشات 
+<h4><form method="post" action="https://syr-furniture.000webhostapp.com/login.php">
+  <div class="login">
+    
+    	<input type="text" name="user_name" placeholder="User Name" />
+        <input type="password" name="user_password" placeholder="Password"/>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Login</button>
+    
+</div>
+ 
+</form></h4> </h1></div>
+<form method="post" action="https://syr-furniture.000webhostapp.com/search.php">
+  <div id="hm">
+  
+	<input type="text" name="kind" placeholder="النوع"  />
+
+	<input type="text" name="color" placeholder="اللون"  />
+		
+    <input type="text" name="dis" placeholder="وصف"  />
+		
+	<input type="number" min="0" name="price" placeholder="السعر"  />
+	
+    <select name="type"  >
+	<option value="" selected disabled hidden>اختر هنا</option>
+		<option value="غرفة معيشة">غرفة معيشة</option>
+		<option value="غرفة طعام">غرفة طعام</option>
+		<option value="غرفة نوم">غرفة نوم</option>
+		<option value="مطبخ">مطبخ</option>
+		<option value="البلكونة">البلكونة</option>
+		</select>
+		
+<button type="submit" class="btn btn-primary btn-block btn-large">بحث</button>
+    
+</div>
+ 
+</form>
+<div id="i2" class="wow"></div>
+<h1 id="hk"> <a href = "pic.php"> منتجاتنا</h1>
+<p>
+<div id="col-1">
+  <h1> <a href = "client-testimonials.html">  شهادات الزيائن</h1>
+ 
+</div>
+<div id="col-2">
+  <h1> <a href = "bilal.html"> للاتصال من هنا</h1>
+</div>
+
+
+ <div id="cn"> <h1> <a href = "about.html"> من نحن</a></h1>
+  <h3>شركة رائدة في مجال المفروشات </h3>
+  <h3>لدينا العديد من الافرع في سوريا </h3>
+</div>
+
+
+
+</p>
+
+
+
+<script>
+
+var x=0;
+go();
+
+function go() {
+
+		if(x==0){
+		var dd1= document.getElementById("i2");
+		dd1.style.backgroundImage="url(1.jpg)"; 
+		}
+		if(x==1){
+		var dd1= document.getElementById("i2");
+		dd1.style.backgroundImage="url(2.jpg)"; 
+		}
+		if(x==2){
+		var dd1= document.getElementById("i2");
+		dd1.style.backgroundImage="url(3.jpg)"; 
+		}
+		x++;
+		if(x==3){x=0;}
+	
+  setTimeout(go, 3000);    
+}
+</script>
+</body>
+</html>
